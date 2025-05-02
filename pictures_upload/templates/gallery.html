@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>画像一覧</title>
+        <style>
+            img {
+                width: 200px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>画像一覧</h1>
+        {% for img in images %}
+            <img src="{{ img }}" alt="{{ img }}">
+        {% endfor %}
+
+        <a href="{{ url_for('upload_file') }}">画像アップロードへ</a>
+    </body>
+</html>
+

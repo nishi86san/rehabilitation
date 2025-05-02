@@ -12,6 +12,8 @@
         <input type="submit" value="アップロード">
     </form>
 
+    <a href="{{ url_for('gallery') }}">画像一覧へ</a>
+
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <ul>
@@ -23,4 +25,5 @@
     {% endwith %}
 </body>
 </html>
+
 
